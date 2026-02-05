@@ -17,6 +17,8 @@
 #
 ##
 # Imports python modules
+import os
+
 from os import listdir
 
 # TODO 2: Define get_pet_labels function below please be certain to replace None
@@ -40,6 +42,30 @@ def get_pet_labels(image_dir):
       List. The list contains for following item:
          index 0 = pet image label (string)
     """
-    # Replace None with the results_dic dictionary that you created with this
-    # function
-    return None
+
+    results_dic = {}
+
+    # Get list of filenames in directory
+    filenames = os.listdir(image_dir)
+
+    for filename in filenames:
+
+        # Skip hidden files like .DS_Store
+        if filename.startswith("."):
+            continue
+
+        # Remove file extension and split by underscore
+        name = filename.lower().split(".")[0]
+        words = name.split("_")
+
+        # Keep only alphabetic words
+        pet_label = " ".join([word for word in words if word.isalpha()])
+
+        # Strip whitespace
+        pet_label = pet_label.strip()
+
+        # Add to dictionary
+        results_dic[filename] = [pet_label]
+
+    return results_dic
+    
