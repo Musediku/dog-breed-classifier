@@ -5,21 +5,21 @@ Command Line Arguments:
 
 Pet Image Label Dictionary has 4 key-value pairs.
 Below are 4 of them:
- 1 key:                   Zebra_01.jpg  label:                      zebra
- 2 key:                     Dog_01.jpg  label:                        dog
- 3 key:               Cofee_mug_01.jpg  label:                  cofee mug
- 4 key:                     Dog_02.jpg  label:                        dog
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:                   Zebra_01.jpg  label:                      zebra
+ 4 key:               Cofee_mug_01.jpg  label:                  cofee mug
 
      MATCH:
-
-                  Zebra_01.jpg: 
-Real:                      zebra   Classifier:                          zebra
 
                     Dog_01.jpg: 
 Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
 
                     Dog_02.jpg: 
 Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                  Zebra_01.jpg: 
+Real:                      zebra   Classifier:                          zebra
 
  NOT A MATCH:
 
@@ -30,10 +30,6 @@ Real:                  cofee mug   Classifier:                     coffee mug
 
      MATCH:
 
-                  Zebra_01.jpg: 
-Real:                      zebra   Classifier:                          zebra  
-PetLabelDog: 0  ClassLabelDog: 0
-
                     Dog_01.jpg: 
 Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
 PetLabelDog: 1  ClassLabelDog: 1
@@ -41,6 +37,10 @@ PetLabelDog: 1  ClassLabelDog: 1
                     Dog_02.jpg: 
 Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
 PetLabelDog: 1  ClassLabelDog: 1
+
+                  Zebra_01.jpg: 
+Real:                      zebra   Classifier:                          zebra  
+PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
 

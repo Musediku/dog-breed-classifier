@@ -5,48 +5,48 @@ Command Line Arguments:
 
 Pet Image Label Dictionary has 4 key-value pairs.
 Below are 4 of them:
- 1 key:                   Zebra_01.jpg  label:                      zebra
- 2 key:                     Dog_01.jpg  label:                        dog
- 3 key:               Cofee_mug_01.jpg  label:                  cofee mug
- 4 key:                     Dog_02.jpg  label:                        dog
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:                   Zebra_01.jpg  label:                      zebra
+ 4 key:               Cofee_mug_01.jpg  label:                  cofee mug
 
      MATCH:
-
-                  Zebra_01.jpg: 
-Real:                      zebra   Classifier:                          zebra
 
                     Dog_01.jpg: 
 Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
 
- NOT A MATCH:
+                  Zebra_01.jpg: 
+Real:                      zebra   Classifier:                          zebra
 
-              Cofee_mug_01.jpg: 
-Real:                  cofee mug   Classifier:                     coffee mug
+ NOT A MATCH:
 
                     Dog_02.jpg: 
 Real:                        dog   Classifier:                       malinois
+
+              Cofee_mug_01.jpg: 
+Real:                  cofee mug   Classifier:                     coffee mug
 
 # Total Images 4 # Matches: 2 # NOT Matches: 2
 
      MATCH:
 
-                  Zebra_01.jpg: 
-Real:                      zebra   Classifier:                          zebra  
-PetLabelDog: 0  ClassLabelDog: 0
-
                     Dog_01.jpg: 
 Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
 PetLabelDog: 1  ClassLabelDog: 1
 
- NOT A MATCH:
-
-              Cofee_mug_01.jpg: 
-Real:                  cofee mug   Classifier:                     coffee mug  
+                  Zebra_01.jpg: 
+Real:                      zebra   Classifier:                          zebra  
 PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
 
                     Dog_02.jpg: 
 Real:                        dog   Classifier:                       malinois  
 PetLabelDog: 1  ClassLabelDog: 1
+
+              Cofee_mug_01.jpg: 
+Real:                  cofee mug   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
 
 # Total Images 4 # Matches: 2 # NOT Matches: 2
 
